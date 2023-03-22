@@ -8,7 +8,7 @@
 LeadLandia will serve up to three pages:
 1. **Character Creator** - page includes a form for lead-gen information to be input, and a 3D view showing the Prospect Pal generated from their responses. Designed for use on a tablet, tested on an iPad mini 6.
 2. **LeadLandia Viewer** - page is entirely a 3D view showing a selection of Prospect Pals stored in a database. Updates automatically when a new Pal is created. To be shown on a large TV screen.
-3. * TBD **Trading Card Deck** - page shows a Prospect Pal from the database based on the URL it's accessed from, in a trading card format. May also contain functionality to view other cards in the deck. *
+3. *TBD **Trading Card Deck*** - page shows a Prospect Pal from the database based on the URL it's accessed from, in a trading card format. May also contain functionality to view other cards in the deck.
 
 ## Package Dependencies
 
