@@ -1,0 +1,7 @@
+[
+    {
+        "name": "resourceName",
+        "type": "gltf / texture / cubeTexture",
+        "path": "path/to/resource"
+    }
+]

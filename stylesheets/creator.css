@@ -1,0 +1,19 @@
+body {
+    background-color: #303030;
+    overflow: hidden;
+}
+
+canvas#characterCreator3Dview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#creatorInterface {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2vw;
+    z-index: 10;
+}

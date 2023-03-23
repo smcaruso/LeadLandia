@@ -4,10 +4,23 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>LeadLandia Creator</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div id="creatorPage">
+      <div id="creatorInterface">
+        <div id="basicInfo">
+          <h3>Choose Color</h3>
+          <input class="creatorOptionButton color" type="button" value="#ff0000">
+          <input class="creatorOptionButton color" type="button" value="#00ff00">
+          <input class="creatorOptionButton color" type="button" value="#0000ff">
+          <input class="creatorOptionButton color" type="button" value="#000000">
+          <input class="creatorOptionButton color" type="button" value="#ffffff">
+          <input class="creatorCommitButton color" type="button" value="Save">
+        </div>
+      </div>
+      <canvas id="characterCreator3Dview">
+    </div>
+    <script type="module" src="./creatorMain.js"></script>
   </body>
 </html>
