@@ -5,7 +5,8 @@ export class CreatorEnvironment {
     constructor(parentScene) {
         
         this.scene = parentScene;
-        
+        this.scene.fog = new THREE.Fog(0xffffff, 7, 10);
+
         const globalLight = new THREE.DirectionalLight(0xffffff, 2);
         globalLight.translateX(1);
         globalLight.translateY(1);

@@ -27,8 +27,16 @@ export class Creator {
             0.1,
             120
         );
+        
+        // Pointer model manipulation controls
 
         this.controls = new OrbitControls(this.camera, this.canvas);
+        this.controls.target = new THREE.Vector3(0, 0.5, 0);
+        this.controls.enablePan = false;
+        this.controls.minDistance = 2;
+        this.controls.maxDistance = 8;
+        this.controls.maxPolarAngle = Math.PI * 0.5;
+        this.controls.enableDamping = true;
 
         this.renderer = new THREE.WebGLRenderer({
             canvas: this.canvas,
@@ -59,11 +67,15 @@ export class Creator {
 
     setCameraTransform() {
 
-        // this.camera.rotateX(Math.PI * .35);
         this.camera.translateX(5);
         this.camera.translateY(3);
-        this.camera.translateZ(10);
-        this.camera.lookAt(0,0,0);
+        this.camera.translateZ(5);
+        this.camera.lookAt(0,2,0);
+        
+        let fullWidth = this.sizes.width * 2;
+        let fullHeight = this.sizes.height;
+
+        this.camera.setViewOffset(fullWidth, fullHeight, this.sizes.width * 0.25, 0, this.sizes.width, this.sizes.height);
 
         this.scene.add(this.camera);
 
